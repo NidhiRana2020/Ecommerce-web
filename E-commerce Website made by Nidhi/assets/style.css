@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.header_menu{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: aliceblue;
+}
+
+
+.header_menu ul li a{
+    color: rgb(21, 52, 52);
+    font-size: large;
+
+}
+
+.header_menu .badge{
+        background-color: red;
+            color: white;
+            padding: 1PX;
+            text-align: center;
+            border-radius: 5px;
+}
+
+
+.carousel-item {
+    height: 90vh;
+    /* Adjust this value as needed */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product_img{
+    position: relative;
+}
+.new_product{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+.badge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#feature{
+    background-color: rgb(30, 135, 135);
+}
+
+.footer_section{
+    background-color: aliceblue;
+}
+
+.footer_links ul{
+    padding-left: 0px;
+}
+
+.footer_links ul li{
+    list-style: none;
+}
+
+.footer_links ul li a{
+    text-decoration: none;
+    color: rgb(3, 7, 7);
+
+}
+
+.footer_links ul li a:hover{
+    color: blue;
+}
+
+.backtop{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 40vh;
+        /* Smaller height for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .carousel-item {
+        height: 50vh;
+        /* Medium height for medium screens */
+    }
+}
+
+@media (min-width: 1201px) {
+    .carousel-item {
+        height: 90vh;
+        /* Larger height for larger screens */
+    }
+}
